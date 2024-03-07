@@ -1,0 +1,90 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+/* UTILITIES */
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* LAYOUT */
+.container  {
+    width: 100%;
+    padding: 15px;
+
+}
+
+@media screen and (min-width:1160px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1160px;
+    }
+}
+
+/* HEADER */
+
+header {
+    background-color: #0084fd;
+    color: white;
+    line-height: 70px;
+}
+
+.header-menu {
+    display: none;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.hamburger-menu {
+    font-size: 2rem;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+@media screen and (min-width: 1160px) {
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .header-menu {
+        display: block;
+    }
+}
+
+/* MAIN */
+
+.card {
+    height: 400px;
+    width: 80%;
+    background-color: #b5ddff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
